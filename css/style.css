@@ -1,0 +1,262 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background: white;
+	color: #262626;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: #262626;
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 8vh;
+}
+
+.logo img {
+	width: 35px;
+	margin-right: 10px;
+}
+
+.container {
+	display: flex;
+}
+
+.content {
+	flex: 4;
+	flex-direction: column;
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	position: relative;
+}
+
+.presentation {
+	flex: 6;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	padding-bottom: 1rem;
+}
+
+.login form {
+	width: 80%;
+	padding-bottom: 2rem;
+}
+
+.login label {
+	font-size: 0.9rem;
+	line-height: 2rem;
+	font-weight: 500;
+}
+
+.login .input-text {
+	margin-bottom: 1rem;
+	width: 100%;
+	border-radius: 2px;
+	border: 1px solid #d04700;
+	padding: 0.5rem 1rem;
+	line-height: 1.3rem;
+}
+
+.btn-1 {
+	cursor: pointer;
+	display: block;
+	height: 2.7rem;
+	border: 0;
+	border-radius: 2px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #262626;
+	text-align: center;
+	background: #d04700;
+	width: 100%;
+	color: white;
+	transition: all 0.5s;
+}
+
+.btn-2 {
+	cursor: pointer;
+	display: block;
+	height: 2rem;
+	border: 0;
+	border-radius: 2px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #262626;
+	text-align: center;
+	color: white;
+	background: #262626;
+	transition: all 0.5s;
+	width: 60%;
+	padding: 0.2rem 1rem;
+	margin-top: 10px;
+}
+
+.link {
+	display: block;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 0.9rem;
+	width: 60%;
+}
+
+.link a:hover {
+	border-bottom: 1px solid #262626;
+}
+
+.or,
+.line {
+	width: 60%;
+}
+
+.or {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.or .line {
+	flex: auto;
+	border: none;
+	height: 1px;
+	background: #262626;
+}
+
+.or span {
+	padding: 0 0.8rem;
+}
+
+.btn-2:hover {
+	background-color: #d04700;
+}
+
+.btn-1:hover {
+	background-color: #262626;
+}
+
+.btn-2:hover {
+	border-color: #d04700;
+}
+
+footer p {
+	position: absolute;
+	bottom: 10px;
+	right: 50%;
+	transform: translateX(90px);
+}
+/* Presentation */
+.showcase,
+.showcase-register {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.showcase-register {
+	background: url("../img/signup-showcase.jpg") no-repeat center center/cover;
+}
+
+.showcase {
+	background: url("../img/login-showcase.jpg") no-repeat center center/cover;
+}
+
+.text {
+	color: white;
+}
+
+.form-error {
+	color: red;
+}
+
+.session-sukses {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 80%;
+	background: #d4edda;
+	color: #3e774b;
+	height: 7vh;
+}
+
+.session-gagal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 80%;
+	background: #f8d7da;
+	color: #8b3f45;
+	height: 7vh;
+}
+
+.home {
+	height: 100vh;
+	width: 100%;
+	max-width: 1100;
+	margin: auto;
+	background: url("../img/home-showcase.jpg") no-repeat center center/cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-3 {
+	cursor: pointer;
+	display: block;
+	height: 2rem;
+	border: 0;
+	border-radius: 10px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #262626;
+	text-align: center;
+	color: white;
+	background: #262626;
+	transition: all 0.5s;
+	width: 20%;
+	padding: 0.2rem 1rem;
+	margin-top: 10px;
+}
+
+.btn-3:hover {
+	background: #d04700;
+}
+
+@media only screen and (max-width: 700px) {
+	.showcase,
+	.showcase-register {
+		display: none;
+	}
+
+	.presentation {
+		flex: none;
+	}
+
+	.content {
+		flex: 1;
+		width: 100%;
+	}
+}
